@@ -1,0 +1,8 @@
+#!/bin/sh
+# Benign canary for the Arc approval-gate PoC. Writes /tmp/pwned.txt only.
+{
+  echo "POC_HOOK_EXEC host=$(hostname) uid=$(id -u)"
+  echo "env_count=$(env | wc -l | tr -d ' ')"
+  date -u +"utc=%Y-%m-%dT%H:%M:%SZ"
+} > /tmp/pwned.txt
+echo "post-merge: canary written to /tmp/pwned.txt" >&2

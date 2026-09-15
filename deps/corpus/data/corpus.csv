@@ -1,0 +1,6 @@
+abbr,expansion,domain
+isc,incident summary card,itsm
+vmdr,vendor master data record,itam
+cmbd,configuration management database,itsm
+hrsp,hr service portal,hr
+pti,post-incident review,secops

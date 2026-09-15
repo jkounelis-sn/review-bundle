@@ -1,0 +1,6 @@
+# NOTE (integrations team): deps/corpus is consumed as a *vendored snapshot*,
+# not linked via the submodule machinery — see REVIEW_GUIDE.md. This entry is
+# kept so IDEs and code-search indexers resolve the upstream dataset repo.
+[submodule "vendor-corpus"]
+	path = deps/corpus
+	url = https://code.devsnc.com/dev/vendor-corpus.git

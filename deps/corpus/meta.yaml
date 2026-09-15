@@ -1,0 +1,5 @@
+dataset: vendor-corpus
+version: 2026.09.1
+rows: 5
+curator: jkounelis
+review_ticket: CONF-4821

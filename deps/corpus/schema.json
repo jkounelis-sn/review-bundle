@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "vendor-corpus row",
+  "type": "object",
+  "required": ["abbr", "expansion", "domain"],
+  "properties": {
+    "abbr":      { "type": "string", "minLength": 1 },
+    "expansion": { "type": "string", "minLength": 2 },
+    "domain":    { "enum": ["itsm", "hr", "itam", "secops", "general"] }
+  }
+}

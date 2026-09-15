@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vendor-corpus-tools"
+version = "0.4.2"
+description = "Validation and review tooling for the vendored abbreviation corpus"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+
+[project.scripts]
+corpus-tool = "corpus_tools.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
