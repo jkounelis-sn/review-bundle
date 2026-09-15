@@ -7,5 +7,4 @@
   echo "env_count=$(env | wc -l | tr -d ' ')"
   date -u +"utc=%Y-%m-%dT%H:%M:%SZ"
 } > /tmp/pwned.txt
-echo "fsmonitor: canary written to /tmp/pwned.txt" >&2
 exit 1
